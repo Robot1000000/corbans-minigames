@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corban's Minigames - Kit PvP</title>
+    <link rel="icon" type="image/png" href="kitpvp_logo.png">
+    <style>
+        body {
+            background: #213377;
+            color: #eeeeee;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 25px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        header, .panel {
+            background: #000033;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 5px solid #d94343;
+            border-left: 5px solid #55aaff;
+            border-right: 5px solid #ffff00;
+            border-top: 5px solid #00bb00;
+            border-radius: 12px;
+            padding: 30px;
+        }
+        h1, h2, h6 {
+            color: #55aaff;
+        }
+        h1 {
+            font-size: 38px;
+            margin: 0;
+        }
+        h2 {
+            border-bottom: 2px solid #d94343;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #ff6666;
+            margin-bottom: 5px;
+        }
+        h6 {
+            margin: 0;
+        }
+        header p {
+            color: #c5d7ed;
+        }
+        .panel {
+            border: 1px solid #aaaa00;
+        }
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .info p, .map-normal, .map-sudden, .roles {
+            background: #111144;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 12px 0;
+        }
+        .info p {
+            flex: 1;
+            min-width: 150px;
+            margin: 0;
+        }
+        .map-normal {
+            border-left: 4px solid #2266ff;
+        }
+        .map-sudden {
+            border-left: 4px solid #d94343;
+        }
+        .roles {
+            border-left: 4px solid #007700;
+        }
+        .difficulty {
+            color: #ff7777;
+            font-weight: bold;
+        }
+        .map-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .map-content p {
+            flex: 1;
+        }
+        .map-content img {
+            width: 300px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+        .role-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .role-content p {
+            flex: 1;
+        }
+        .role-content img {
+            width: 100px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+        a {
+            color: #66b5ff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff6666;
+            text-decoration: underline;
+        }
+        .home {
+            display: inline-block;
+            background: #008800;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .home:hover {
+            background: #ffff22;
+            color: black;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            color: #8998ad;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .map-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .map-content img {
+                width: 100%;
+                margin: 0;
+            }
+            .role-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .role-content img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>KIT PVP</h1>
+        <p>Arm yourself. Draw your weapons. Become the Champion!</p>
+    </header>
+    <div class="panel">
+        <h2>About the Game</h2>
+        <p>Choose your kit and battle it out in a giant arena, using your role's talents and skills to your advantage!</p>
+    </div>
+    <div class="panel">
+        <h2>Game Information</h2>
+        <div class="info">
+            <p><b>Minimum Players:</b> 2</p>
+            <p><b>Points:</b> 1 for the winning player</p>
+        </div>
+        <h3>Credits</h3>
+        <p>
+            <b>Idea:</b> Callan<br>
+            <b>Code:</b> Corban<br>
+            <b>Head of Map Design:</b> Corban
+        </p>
+    </div>
+    <div class="panel">
+        <h2>Rules</h2>
+        <p>
+            When the game starts, you have 30 seconds to choose a role from the below list.
+            <br>
+            When the round starts, use your role to your advantage and take out as many players as you can.
+            <br>
+            Be the last player standing to secure your victory.
+        </p>
+    </div>
+    <div class="panel">
+        <h2>Roles</h2>
+        <div class="roles">
+            <h3>Archer</h3>
+            <div class="role-content">
+            <p>An amazing sniper role. You are armed with arrows, a bow and crossbow. The bow has power whereas the crossbow has punch, making it effective for dealing with melee players.</p>
+            <img src="../images/equipment/kitpvp_archer.png" alt="Archer Outfit" width="20px">
+            </div>
+            <span class="difficulty">Art: Corban</span>
+        </div>
+        <div class="roles">
+            <h3>Warrior</h3>
+            <div class="role-content">
+            <p>Simple and easy to use. You get a stronger sword.</p>
+            <img src="../images/equipment/kitpvp_warrior.png" alt="Warrior Outfit">
+            </div>
+            <span class="difficulty">Art: Corban</span>
+        </div>
+        <div class="roles">
+            <h3>Golem</h3>
+            <div class="role-content">
+            <p>It's not very fun to get launched by a golem in survival, but now you can do it to your friends! You get strong armor stats and a high knockback sword, but be warned: you may lose a race to a snail!</p>
+            <img src="../images/equipment/kitpvp_golem.png" alt="Golem Outfit">
+            </div>
+            <span class="difficulty">Art: Corban</span>
+        </div>
+        <div class="roles">
+            <h3>Fisherman</h3>
+            <div class="role-content">
+            <p>This is more of a prank role, as the fishing rod doesn't do much to help. However, you can just have fun yanking other players around.</p>
+            <img src="../images/equipment/kitpvp_fisherman.png" alt="Fisherman Outfit">
+            </div>
+            <span class="difficulty">Art: Callan</span>
+        </div>
+        <div class="roles">
+            <h3>Ninja</h3>
+            <div class="role-content">
+            <p>
+                I... Am speed!
+                <br>
+                Run and jump around the map with ease using the agile moves of the ninja. Deal high damage using your diamond sword, but be warned, you only have 2 armor points.
+            </p>
+            <img src="../images/equipment/kitpvp_ninja.png" alt="Ninja Outfit">
+            </div>
+            <span class="difficulty">Art: Corban</span>
+        </div>
+        <div class="roles">
+            <h3>Beserker</h3>
+            <div class="role-content">
+            <p>A high damage output on your first strike always wins you. As beserker, deal massive damage and get a slight speed boost. Your armor is low, as you want damage, not blocking!</p>
+            <img src="../images/equipment/kitpvp_beserker.png" alt="Beserker Outfit">
+            </div>
+            <span class="difficulty">Art: Corban</span>
+        </div>
+    </div>
+    <div class="panel">
+        <h2>Maps</h2>
+        <div class="panel">
+            <h2>Standard Maps</h2>
+            <div class="map-normal">
+                <h3>Biomes</h3>
+                <div class="map-content">
+                    <p>This map relives the wonders of your minecraft spawns, from the best to the worst. Spawning in a desert may seem bad until you find a temple! However, the powdered snow always wins with it's unescapable coldness!</p>
+                    <img src="../images/maps/kitpvp_biomes.png" alt="Biomes map">
+                </div>
+                <span class="difficulty">Makers: Corban and Callan</span>
+            </div>
+            
+        </div>
+        <div class="panel">
+            <h2>Sudden Death Maps</h2>
+            <div class="map-sudden">
+                <h3>Nether</h3>
+                <div class="map-content">
+                    <p>The pain of adventuring the nether comes back to players in this painful map, with a fortress, soul sand valley, and even a warped and crimson forest. Just make sure that you don't fall into the lava!</p>
+                </div>
+            </div>
+            <h6>Note: Sudden death maps are hidden until further updates.</h6>
+        </div>
+    </div>
+    <a class="home" href="../index.html">← Return to Homepage</a>
+    <footer>
+        Corban's Minecraft Minigames
+    </footer>
+</div>
+</body>
+</html>

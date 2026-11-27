@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corban's Minigames - Bridge</title>
+    <link rel="icon" type="image/png" href="../images/logos/bridge_logo.png">
+    <style>
+        body {
+            background: #171d29;
+            color: #eeeeee;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 25px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        header, .panel {
+            background: #202d40;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        header {
+            text-align: center;
+            border: 2px solid #3478c9;
+            border-bottom: 5px solid #d94343;
+            border-radius: 12px;
+            padding: 30px;
+        }
+        h1, h2 {
+            color: #55aaff;
+        }
+        h1 {
+            font-size: 38px;
+            margin: 0;
+        }
+        h2 {
+            border-bottom: 2px solid #d94343;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #ff6666;
+            margin-bottom: 5px;
+        }
+        header p {
+            color: #c5d7ed;
+        }
+        .panel {
+            border: 1px solid #405575;
+        }
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .info p, .map {
+            background: #293b55;
+            border-left: 4px solid #3478c9;
+            padding: 12px;
+            border-radius: 5px;
+        }
+        .info p {
+            flex: 1;
+            min-width: 150px;
+            margin: 0;
+        }
+        .map {
+            margin: 12px 0;
+        }
+        .special {
+            border-left-color: #d94343;
+        }
+        .difficulty {
+            color: #ff7777;
+            font-weight: bold;
+        }
+        .map-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .map-content p {
+            flex: 1;
+        }
+        .map-content img {
+            width: 300px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+        a {
+            color: #66b5ff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff6666;
+            text-decoration: underline;
+        }
+        .home {
+            display: inline-block;
+            background: #2866ad;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .home:hover {
+            background: #c43c3c;
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            color: #8998ad;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .map-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .map-content img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>BRIDGE</h1>
+        <p>Fight your opponent. Cross the bridge. Capture the hole!</p>
+    </header>
+    <div class="panel">
+        <h2>About the Game</h2>
+        <p>Fight your opponent to be the first one into the other team's hole!</p>
+    </div>
+    <div class="panel">
+        <h2>Game Information</h2>
+        <div class="info">
+            <p><b>Minimum Players:</b> 2</p>
+            <p><b>Points:</b> 1 for the winning team</p>
+        </div>
+        <h3>Credits</h3>
+        <p>
+            <b>Idea:</b> Hugo<br>
+            <b>Code:</b> Corban<br>
+            <b>Head of Map Design:</b> Corban
+        </p>
+    </div>
+    <div class="panel">
+        <h2>Rules</h2>
+        <p><b>Each player gets:</b></p>
+        <ul>
+            <li>A Stone Sword</li>
+            <li>Armor</li>
+            <li>Shears</li>
+            <li>Blocks</li>
+            <li>Bow and Arrows</li>
+        </ul>
+        <p>
+            Upon entering the opposing team's hole, the round ends
+            and your team is awarded one point.<br>
+            Entering your own hole kills you.
+        </p>
+    </div>
+    <div class="panel">
+        <h2>Maps</h2>
+        <div class="panel">
+            <h2>Basic Maps</h2>
+            <div class="map">
+                <h3>Circus</h3>
+                <div class="map-content">
+                    <p>This map has a roundabout way of attacking the hole.
+                    The hole is against a wall facing the bridge, so
+                    players must go around to reach it.</p>
+                    <img src="../images/maps/bridge_circus.png" alt="Circus map">
+                </div>
+                <span class="difficulty">Challenge: Medium</span>
+            </div>
+            <div class="map">
+                <h3>Extended</h3>
+                <div class="map-content">
+                    <p>This map has the bridge and the islands scaled upwards,
+                    so bridging on sides is allowed.</p>
+                    <img src="../images/maps/bridge_extended.png" alt="Extended map">
+                </div>
+                <span class="difficulty">Challenge: Easy</span>
+            </div>
+            <div class="map">
+                <h3>Fortress</h3>
+                <div class="map-content">
+                    <p>This map is focused on strategy, with two archer towers
+                    and many sneaky entries that you can find yourself.</p>
+                    <img src="../images/maps/bridge_fortress.png" alt="Fortress map">
+                </div>
+                <span class="difficulty">Challenge: Hard</span>
+                <br>
+                <span class="difficulty">Design: Callan</span>
+            </div>
+            <div class="map">
+                <h3>Temple</h3>
+                <div class="map-content">
+                    <p>Temple, grave, whatever. A simple map with an open hole
+                    and a roof-based secret.</p>
+                    <img src="../images/maps/bridge_temple.png" alt="Temple map">
+                </div>
+                <span class="difficulty">Challenge: Easy</span>
+            </div>
+            <div class="map">
+                <h3>Wall Of China</h3>
+                <div class="map-content">
+                    <p>Relive attacking guarded walls in this map!
+                    Dig your way through or climb up, your choice!</p>
+                    <img src="../images/maps/bridge_wallofchina.png" alt="Wall Of China map">
+                </div>
+                <span class="difficulty">Challenge: Medium</span>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>Special Maps</h2>
+            <div class="map special">
+                <h3>Portals</h3>
+                <div class="map-content">
+                    <p>This map has the bridge going laterally, with a portal
+                    at the corners of the map.</p>
+                    <img src="../images/maps/bridge_portals.png" alt="Portals map">
+                </div>
+                <span class="difficulty">Challenge: Hard</span>
+            </div>
+            <div class="map special">
+                <h3>Unstable (Scrapped Idea)</h3>
+                <div class="map-content">
+                    <p>In this map, the map was meant to slowly return to its
+                    original state, however, the requirements made this
+                    too laggy.</p>
+                </div>
+                <span class="difficulty">Challenge: Hard</span>
+            </div>
+            <div class="map special">
+                <h3>Conduits</h3>
+                <div class="map-content">
+                    <p>In this map, each team's hole is protected by two
+                    conduits. Stand on both the opposing team's pressure
+                    plates to access the hole.</p>
+                    <img src="../images/maps/bridge_conduits.png" alt="Conduits map">
+                </div>
+                <span class="difficulty">Challenge: Medium</span>
+            </div>
+            <div class="map special">
+                <h3>Reactor</h3>
+                <div class="map-content">
+                    <p>A reactor in the middle randomly blows up and resets
+                    the nearby map!</p>
+                    <img src="../images/maps/bridge_reactor.png" alt="Reactor map">
+                </div>
+                <span class="difficulty">Challenge: Medium</span>
+            </div>
+        </div>
+    </div>
+    <a class="home" href="../index.html">← Return to Homepage</a>
+    <footer>
+        Corban's Minecraft Minigames
+    </footer>
+</div>
+</body>
+</html>
