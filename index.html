@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corban's Minigames</title>
+    <link rel="icon" type="image/png" href="images/logos/minigames_logo.png">
+    <style>
+        body {
+            background: #171d29;
+            color: #eeeeee;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 25px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        header, .panel {
+            background: #202d40;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        header {
+            text-align: center;
+            border: 2px solid #3478c9;
+            border-bottom: 5px solid #d94343;
+            border-radius: 12px;
+            padding: 30px;
+        }
+        h1, h2 {
+            color: #ff3333;
+        }
+        h1 {
+            font-size: 38px;
+            margin: 0;
+        }
+        h2 {
+            border-bottom: 2px solid #d94343;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #ffaa22;
+            margin-bottom: 5px;
+        }
+        header p {
+            color: #c5d7ed;
+        }
+        .panel {
+            border: 1px solid #405575;
+        }
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .info p, .map {
+            background: #293b55;
+            border-left: 4px solid #3478c9;
+            padding: 12px;
+            border-radius: 5px;
+        }
+        .info p {
+            flex: 1;
+            min-width: 150px;
+            margin: 0;
+        }
+        .map {
+            margin: 12px 0;
+        }
+        .special {
+            border-left-color: #d94343;
+        }
+        .difficulty {
+            color: #ff7777;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        li {
+            margin: 0;
+        }
+        .map-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .map-content p {
+            flex: 1;
+        }
+        .map-content img {
+            width: 300px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+        h3 a {
+            color: #66b5ff;
+            text-decoration: none;
+        }
+        h3 a:hover {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        p {
+            color: #eeeeee;
+            text-decoration: none;
+        }
+        p:hover {
+            color: #eeeeee;
+            text-decoration: none;
+        }
+        .home {
+            display: inline-block;
+            background: #2866ad;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .home:hover {
+            background: #c43c3c;
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            color: #8998ad;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .game-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+        .game-panel {
+            position: relative;
+            overflow: hidden;
+            transition: background 0.2s ease;
+        }
+        .game-panel::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #ff0000;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.25s ease;
+        }
+        .game-link:hover .game-panel::after,
+        .game-link:focus-visible .game-panel::after {
+            transform: scaleX(1);
+        }
+        .game-link:hover .game-panel {
+            background: #293b55;
+        }
+        @media (max-width: 600px) {
+            .map-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .map-content img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Corban's Minecraft Minigames</h1>
+        <p>Join the fun of a challenging and fun set of minecraft games!</p>
+    </header>
+    <div class="panel">
+        <h2>Games</h2>
+        <a class="game-link" href="pages/bridge.html">
+            <div class="panel game-panel">
+                <h3>Bridge</h3>
+                <div class="map-content">
+                    <p>Face your foes and try to beat them across the bridge into their hole! This gamemode has fun for all!</p>
+                    <img src="images/backgrounds/minigames_bridge.png" alt="Bridge Gameplay">
+                </div>
+            </div>
+        </a>
+        <a class="game-link" href="pages/kitpvp.html">
+            <div class="panel game-panel">
+                <h3>Kit PvP</h3>
+                <div class="map-content">
+                    <p>Use a hopefully balanced kit to your advantage to become the last player alive!</p>
+                    <img src="images/backgrounds/minigames_kitpvp.png" alt="Kit PvP Gameplay">
+                </div>
+            </div>
+        </a>
+        <a class="game-link" href="pages/cnr.html">
+            <div class="panel game-panel">
+                <h3>Cops and Robbers</h3>
+                <div class="map-content">
+                    <p>Run free from the cops and rescue your friends in this amazing game of hide and seek!</p>
+                    <img src="images/backgrounds/minigames_cnr.png" alt="Cops and Robbers Gameplay">
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="panel game-panel">
+        <h2>Versions</h2>
+        <a class="game-link" href="pages/updatelog.html">
+            <div class="panel game-panel">
+                <h3>Update Log</h3>
+                <p>Look through the very complex debugging log that I wasted my time making because I was tired.</p>
+            </div>
+        </a>
+        <a class="game-link" href="pages/downloads.html">
+            <div class="panel game-panel">
+                <h3>Game Downloads</h3>
+                <p>
+                    Download the game for your own value!
+                    <br>
+                    Please don't claim credit for this project or use my mods for other projects.
+                    <br>
+                    Be warned though: this project was made on Minecraft Education and may not work on Bedrock.
+                </p>
+            </div>
+        </a>
+        <a class="game-link" href="pages/credits.html">
+            <div class="panel game-panel">
+                <h3>Credits</h3>
+                <p>Look through the very lengthy credits!</p>
+            </div>
+        </a>
+    </div>
+    <div class="panel game-panel">
+        <h2>Creators</h2>
+        <a class="game-link" href="pages/corban.html">
+            <div class="panel game-panel">
+                <h3>Corban</h3>
+                <div class="map-content">
+                    <p>The main creator of this project. I code, build, mod, and make the website. I've done so much. Thanks to Callan and Hugo for backing me up.</p>
+                    <img src="images/logos/corban_logo.png" alt="Corban's Logo">
+                </div>
+            </div>
+        </a>
+        <a class="game-link" href="pages/callan.html">
+            <div class="panel game-panel">
+                <h3>Callan</h3>
+                <div class="map-content">
+                    <p>I am executive producer of the minigames project. I brainstorm ideas for gamemodes, design maps and build the maps. I’ve done a lot but not as much as Corban. :) Thanks to Corban for giving me the opportunity to become a part of this cool project!</p>
+                    <img src="images/logos/callan_logo.png" alt="Callan's Logo">
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
